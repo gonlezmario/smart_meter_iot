@@ -1,0 +1,70 @@
+# Created by Ultra Librarian Gold 8.3.307 Copyright © 1999-2021
+# Frank Frank, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "LA 55-P_LEM")
+Pad (Name "1") (Location 0, 0.00000035) (HoleSize 53) (Surface False) (Rotation 0) (ExpandMask 0)
+PadShape (Size 87, 87) (Shape Rectangular) (Layer Top)
+PadShape (Size 87, 87) (Shape Rectangular) (Layer Bottom)
+PadShape (Size 87, 87) (Shape Rectangular) (Layer MidLayer)
+EndPad
+Pad (Name "2") (Location 200, 0.00000035) (HoleSize 53) (Surface False) (Rotation 0) (ExpandMask 0)
+PadShape (Size 87, 87) (Shape Rounded) (Layer Top)
+PadShape (Size 87, 87) (Shape Rounded) (Layer Bottom)
+PadShape (Size 87, 87) (Shape Rounded) (Layer MidLayer)
+EndPad
+Pad (Name "3") (Location 1100, 0.00000035) (HoleSize 53) (Surface False) (Rotation 0) (ExpandMask 0)
+PadShape (Size 87, 87) (Shape Rounded) (Layer Top)
+PadShape (Size 87, 87) (Shape Rounded) (Layer Bottom)
+PadShape (Size 87, 87) (Shape Rounded) (Layer MidLayer)
+EndPad
+Line (Width 6) (Start -180.5, -267.89369965) (End -180.5, 317.10630035) (Layer Mechanical15) 
+Line (Width 6) (Start -180.5, 317.10630035) (End 1280.5, 317.10630035) (Layer Mechanical15) 
+Line (Width 6) (Start 1280.5, 317.10630035) (End 1280.5, -267.89369965) (Layer Mechanical15) 
+Line (Width 6) (Start 1280.5, -267.89369965) (End -180.5, -267.89369965) (Layer Mechanical15) 
+Polygon (PointCount 4) (Layer Mechanical15) 
+Point (-180.5, -267.89369965)
+Point (-180.5, 317.10630035)
+Point (1280.5, 317.10630035)
+Point (1280.5, -267.89369965)
+EndPolygon
+Polygon (PointCount 4) (Layer Mechanical5) 
+Point (-295.5, -382.89369965)
+Point (-295.5, 432.10630035)
+Point (1395.5, 432.10630035)
+Point (1395.5, -382.89369965)
+EndPolygon
+Line (Width 6) (Start -175.5, -262.89369965) (End 1275.5, -262.89369965) (Layer TopOverlay) 
+Line (Width 6) (Start 1275.5, -262.89369965) (End 1275.5, 312.10630035) (Layer TopOverlay) 
+Line (Width 6) (Start 1275.5, 312.10630035) (End -175.5, 312.10630035) (Layer TopOverlay) 
+Line (Width 6) (Start -175.5, 312.10630035) (End -175.5, -262.89369965) (Layer TopOverlay) 
+Text (Location -223, -25) (Height 50) (Width 3) (Rotation 0) (Layer TopOverlay) (Value "*")
+Line (Width 1) (Start -170.5, -257.89369965) (End 1270.5, -257.89369965) (Layer Mechanical13) 
+Line (Width 1) (Start 1270.5, -257.89369965) (End 1270.5, 307.10630035) (Layer Mechanical13) 
+Line (Width 1) (Start 1270.5, 307.10630035) (End -170.5, 307.10630035) (Layer Mechanical13) 
+Line (Width 1) (Start -170.5, 307.10630035) (End -170.5, -257.89369965) (Layer Mechanical13) 
+Text (Location -173, -25) (Height 50) (Width 3) (Rotation 0) (Layer Mechanical13) (Value "*")
+Step (Name LA 55-P_LEM.step)
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "LA 55-P") (PartCount 1) (DesPrefix "U?")
+Pin (Location 300, 0) (Rotation 180) (PinType Output) (Length 300) (Width 0) (Designator Visible "1") (Name Visible "M") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Pin (Location 2900, -100) (Rotation 0) (PinType Input) (Length 300) (Width 0) (Designator Visible "2") (Name Visible "NEGATIVE") (PinSwap 0) (PartSwap 0) (PinSeq 2) (Part 1)
+Pin (Location 2900, 0) (Rotation 0) (PinType Input) (Length 300) (Width 0) (Designator Visible "3") (Name Visible "POSITIVE") (PinSwap 0) (PartSwap 0) (PinSeq 3) (Part 1)
+Rectangle (Width 5) (Start 300, -400) (End 2900, 300) (Part 1)
+Parameter (Name "Copyright") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Copyright (C) 2022 Ultra Librarian. All rights reserved.") (Part 1)
+Parameter (Name "Mfr_Name") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "LEM") (Part 1)
+Parameter (Name "Manufacturer_Part_Number") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "LA 55-P") (Part 1)
+Parameter (Name "Digi-Key_Part_Number_1") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "398-1010-ND") (Part 1)
+Parameter (Name "Digi-Key_Part_Number_2") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "398-1010-NDL") (Part 1)
+Parameter (Name "RefDes") (Location 1600, 500) (Height 82) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Parameter (Name "Type") (Location 1600, 400) (Height 82) (Rotation 0) (Justification Center) (Value "DEV") (Part 1)
+Description (Value "No Description Available") (Part 1)
+Comment (Value "LA 55-P") (Part 1)
+Footprint (Name "LA 55-P_LEM")
+EndComponent
+EndComponents
